@@ -1,6 +1,6 @@
 import "./bootstrap";
 
-Echo.channel("user-notifications").listen("UserSessionChanged", e => {
+Echo.private("user-notifications").listen("UserSessionChanged", e => {
   Push.create("TABANTAJ", {
     body: e.message,
     icon:

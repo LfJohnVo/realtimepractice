@@ -25,9 +25,9 @@ class EventServiceProvider extends ServiceProvider
         Login::class => [
             BroadcastUserLoginNotification::class,
         ],
-        Logout::class => [
-            BroadcastUserLogoutNotification::class,
-        ],
+        // Logout::class => [
+        //     BroadcastUserLogoutNotification::class,
+        // ],
     ];
 
     /**
@@ -35,7 +35,7 @@ class EventServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        //even
     }
 
     /**
